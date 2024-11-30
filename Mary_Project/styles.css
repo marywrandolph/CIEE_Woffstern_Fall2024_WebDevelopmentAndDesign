@@ -47,8 +47,8 @@ button {
 }
 
 .quote-marks {
-    width: 100px;
-    height: 100px
+    width: 70px;
+    height: 70px
 }
 
 .quote-pic {
@@ -59,10 +59,16 @@ button {
 .text {
     display: flex;
     justify-content: space-between;
+    width: 500px
 }
 
 p {
     font-family: "Courier New";
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
+}
+
+.quote-mark2 {
+    display: flex;
+    align-items: flex-end
 }
