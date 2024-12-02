@@ -37,6 +37,21 @@ button {
     font-weight:bold;
 }
 
+.banner {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-image: url('assets/banner/background-banner.png');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+}
+
+.banner-logo{
+    width: 400px;
+    height:fit-content
+}
+
 .quotes {
     height: 400px;
     display:flex;
