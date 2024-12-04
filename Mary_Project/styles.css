@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    background-color: #B0CCA3;
+    background-color: ivory;
     height: 75px;
 
 }
@@ -17,12 +17,14 @@ body {
 .webmenu {
     display: flex;
     flex-direction: row;
-    gap: 30px
-
+    gap: 30px;
+    a{
+    color: black;
+    }
 }
 
 .logo {
-    height: 70px;
+    height: 30px;
     width:auto
 }
 
@@ -37,20 +39,24 @@ a {
     font-family: 'Courier New';
     font-weight:bold;
     color: white;
+    text-decoration: none;
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Courier New';
     font-weight:bold;
     width: 100px;
     height: 50px;
-    background-color: transparent;
+    background-color: rgb(60, 41, 5);
     border: solid;
     color: white;
 }
 
 .button:hover {
-    background-color: #A2845A;
+    background-color: transparent;
 }
 
 .banner {
@@ -69,7 +75,7 @@ a {
 
 .banner{
 .banner-logo{
-    width: 500px;
+    width: 150px;
     height:fit-content
 }
 
@@ -83,6 +89,12 @@ a {
     }
     .menu-button:hover{
         background-color: transparent;
+    }
+    .locations-button {
+        background-color: transparent;
+    }
+    .locations-button:hover{
+        background-color: #A2845A;
     }
 }
 
@@ -131,5 +143,35 @@ p {
     justify-content: space-between;
     width: 500px
 }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border: solid;
+    background-color: ivory;
+    a{
+        color: black;
+    }
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    width: 700px;
+    
+}
+
+.socials {
+    display: flex;
+    height: 100px;
+    width: 150px;
+    i {
+        font-size: 40px
+    }
 }
 
