@@ -1,18 +1,23 @@
+body {
+    margin: 0px
+}
+
 
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
     background-color: #B0CCA3;
     height: 75px;
+
 }
 
 .webmenu {
     display: flex;
     flex-direction: row;
-    gap: 10px
+    gap: 30px
 
 }
 
@@ -25,16 +30,67 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 30px
 }
 
 a {
     font-family: 'Courier New';
     font-weight:bold;
+    color: white;
 }
 
-button {
+.button {
     font-family: 'Courier New';
     font-weight:bold;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: solid;
+    color: white;
+}
+
+.button:hover {
+    background-color: #A2845A;
+}
+
+.banner {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('assets/banner/background-banner.png');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+}
+
+.banner{
+.banner-logo{
+    width: 500px;
+    height:fit-content
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-evenly;
+    .menu-button {
+        background-color: #A2845A;
+    }
+    .menu-button:hover{
+        background-color: transparent;
+    }
+}
+
+p{
+    font-size: 20px;
+    font-family: "Courier New";
+    font-style: italic;
+}
 }
 
 .quotes {
@@ -43,12 +99,26 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #006556;
+  background-color: rgba(0,101,86,0.8);
 }
 
+
+.quotes{
+p {
+    font-family: "Courier New";
+    font-size: 30px;
+    font-style: italic;
+}
+
+.quote-mark2 {
+    display: flex;
+    align-items: flex-end
+}
+
+
 .quote-marks {
-    width: 100px;
-    height: 100px
+    width: 70px;
+    height: 70px
 }
 
 .quote-pic {
@@ -59,10 +129,7 @@ button {
 .text {
     display: flex;
     justify-content: space-between;
+    width: 500px
+}
 }
 
-p {
-    font-family: "Courier New";
-    font-size: 40px;
-    font-style: italic;
-}
