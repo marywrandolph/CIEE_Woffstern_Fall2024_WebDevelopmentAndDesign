@@ -1,3 +1,4 @@
+/*styling for header*/
 .header{
     display: flex;
     flex-direction: row;
@@ -27,6 +28,7 @@
 }
 .font{
     font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .white{
     color: white;
@@ -50,3 +52,4 @@
     width: 50%;
     height:500px;
 }
+
