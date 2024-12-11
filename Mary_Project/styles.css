@@ -1,8 +1,13 @@
 body {
     margin: 0px
+   
 }
 
+a{
+    
+}
 
+/*HEADER*/
 .header {
     display: flex;
     flex-direction: row;
@@ -36,10 +41,15 @@ body {
 }
 
 a {
-    font-family: 'Courier New';
+    font-family: "abolition", sans-serif;
     font-weight:bold;
     color: white;
     text-decoration: none;
+    letter-spacing: .2cap;
+}
+
+a:hover {
+    color: #A2845A
 }
 
 .button {
@@ -57,7 +67,10 @@ a {
 
 .button:hover {
     background-color: transparent;
+    color: #A2845A;
 }
+
+/*BANNER*/
 
 .banner {
     height: 400px;
@@ -95,16 +108,64 @@ a {
     }
     .locations-button:hover{
         background-color: #A2845A;
+        color: white;
+        a {
+            color: white
+        }
     }
 }
 
 p{
     font-size: 20px;
-    font-family: "Courier New";
+    font-family: "lilgrotesk regular", sans-serif;
     font-style: italic;
 }
 }
 
+/*LOCATIONS*/
+
+.locations{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: ivory;
+    .location-box {
+        height: 500px;
+        width: max-content;
+        border: solid
+    }
+    .locations-pic {
+        height: 350px;
+        width:fit-content
+    }
+    .location-name {
+        margin-left: 20px;
+    span {
+        font-family: "abolition", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px
+    }
+   
+}
+}
+.location-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-around;
+    span{
+        font-family: "lilgrotesk bold", sans-serif;
+    }
+    p {
+        font-family: "lilgrotesk regular", sans-serif;
+        font-size: 10px
+    }
+}
+
+/*QUOTES*/
 .quotes {
     height: 400px;
     display:flex;
@@ -112,12 +173,8 @@ p{
     align-items: center;
     justify-content: space-around;
   background-color: rgba(0,101,86,0.8);
-}
-
-
-.quotes{
 p {
-    font-family: "Courier New";
+    font-family: "lilgrotesk regular", sans-serif;
     font-size: 30px;
     font-style: italic;
 }
@@ -143,6 +200,25 @@ p {
     justify-content: space-between;
     width: 500px
 }
+
+.quote-speaker{
+    display: flex;
+    width: 500px;
+    justify-content: flex-end;
+}
+
+.overall-text {
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+/*FOOTER*/
+
+.ivory-box{
+    height: 50px;
+    background-color: ivory;
 }
 
 .footer {
@@ -154,6 +230,11 @@ p {
     background-color: ivory;
     a{
         color: black;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
     }
 }
 
