@@ -9,7 +9,7 @@
 
 <body>
     <header>
-    <div class="header">
+    <div class="header" id="header">
         <div class="left-header">
         <img class="logo" src="assets/header/logo-banner.png" alt="Coffe Cube Logo">
         <div class="webmenu">
@@ -19,24 +19,24 @@
         </div>
         </div>
         <div class="button">
-        <a target="_blank" href="#section3">ORDER NOW</a>
+        <a href="#menu">ORDER NOW</a>
         </div>
     </div>
 </header>
 <main>
 <!--Banner-->
-<div class="banner">
+<div class="banner" id="banner">
 <img class="banner-logo" src="assets/banner/logo.png">
 <p>Stop by and join our community, or order a drink online!</p>
 <div class="buttons">
-    <div class="button locations-button"><a target="_blank" href="#section3">LOCATIONS</a></div>
-    <div class="button menu-button"><a target="_blank" href="#section3">OUR MENU</a></div>
+    <div class="button locations-button"><a href="#locations">LOCATIONS</a></div>
+    <div class="button menu-button"><a href="#menu">OUR MENU</a></div>
 </div>
 </div>
 
 <!--Menu-->
 
-<div>
+<div id="menu">
     <div><img></div>
     <div class="center-menu">
         <span>COFFEE MENU</span>
@@ -46,7 +46,7 @@
         <div>
             <div>
                 <div>
-                    <img>
+                    <img class = "cookie" src="assets/bestsellers/cookie.png">
                     <div>
                         <div>
                             <span></span>
@@ -134,8 +134,37 @@
     <div><img></div>
 </div>
 
+<!--Reasons-->
+
+<div class = "reasons" id="reasons">
+    <div class = "reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-coffee"></i>
+        <span>QUALITY COFFEE</span>
+        <p>We only serve the best coffee to our customers.</p>
+    </div>
+    <div class = "reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-users-three"></i>
+        <span>COMMUNITY</span>
+        <p>We care about everyone who comes through our doors.</p>
+    </div>
+    <div class = "reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-cheers"></i>
+        <span>DRINK VARIETY</span>
+        <p>We serve everything from coffee to cocktails to tea.</p>
+    </div>
+    <div class="reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-pint-glass"></i>
+        <span>COFFEE TO-GO</span>
+        <p>Come pick up a drink on your lunch break!</p>
+    </div>
+</div>
+
 <!--Locations-->
-<div class = "locations">
+<div class = "locations" id = "locations">
     <div class = "location-box">
        <img class = "locations-pic" src="assets/locations/original.png">
        <div class="location-name">
@@ -179,20 +208,40 @@
 <div class="quotes">
     <div class = "overall-text">
     <div class="text">
-        <img class="quote-marks" src="assets/quotes/quotes2.png">
         <div>
         <p>Life's too short to drink bad coffee.</p>
     </div>
-        <div class='quote-mark2'>
-        <img class="quote-marks" src="assets/quotes/quotes.png">
-    </div>
-    </div>
     <div class = "quote-speaker">
-        <p>-Gord Downie</p>
+        <span>Gord Downie</span>
     </div>
 </div>
     <img class = "quote-pic" src="assets/quotes/quotes-pic.jpg">
 </div>
+</div>
+
+<!--OUR STORY-->
+
+<div class = "story">
+    <div class = ".left-story">
+        <span>OUR STORY</span>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-minus"></i>
+        <p>Nestled in the heart of Prague, Coffee Cube began as a dream to bring people together over a shared love for exceptional coffee and meaningful connections. Inspired by the vibrant spirit of the city and its rich café culture, we’ve crafted a cozy space where tradition meets modernity. Every cup is brewed with passion, using ethically sourced beans from sustainable farms, ensuring every sip tells a story of quality and care. At Coffee Cube, it’s not just about the coffee; it’s about the moments we share and the community we create—one cup at a time.</p>
+        <div class="buttons">
+            <div class="button locations-button"><a href="#locations">LOCATIONS</a></div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <img>
+            <img>
+        </div>
+        <div>
+            <img>
+            <img>
+        </div>
+    </div>
+
 
 </main>
 <footer>

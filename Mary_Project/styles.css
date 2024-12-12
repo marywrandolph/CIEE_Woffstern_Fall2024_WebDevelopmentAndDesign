@@ -3,9 +3,6 @@ body {
    
 }
 
-a{
-    
-}
 
 /*HEADER*/
 .header {
@@ -122,15 +119,44 @@ p{
 }
 }
 
+/*REASONS*/
+
+.reasons {
+    display: flex;
+    flex-direction: row;
+    background-color: #B0CCA3;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    .reason{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+            font-family: "abolition", sans-serif;
+            font-weight:bold;
+            font-size: 25px;
+        }
+        p {
+            font-family: "lilgrotesk regular", sans-serif;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    i{
+        font-size: 40px
+    }
+}
+
 /*LOCATIONS*/
 
 .locations{
     display: flex;
     flex-direction: row;
-    height: 600px;
     align-items: center;
     justify-content: space-around;
     background-color: ivory;
+    height: 600px;
     .location-box {
         height: 500px;
         width: max-content;
@@ -178,17 +204,15 @@ p {
     font-size: 30px;
     font-style: italic;
 }
-
-.quote-mark2 {
-    display: flex;
-    align-items: flex-end
+p::before{
+    content: '"';
+    font-size: 200px;
+}
+p::after{
+    content: '"';
+    font-size: 200px;
 }
 
-
-.quote-marks {
-    width: 70px;
-    height: 70px
-}
 
 .quote-pic {
     width: 250px;
@@ -198,21 +222,43 @@ p {
 .text {
     display: flex;
     justify-content: space-between;
-    width: 500px
+    flex-direction: column;
 }
 
 .quote-speaker{
     display: flex;
     width: 500px;
-    justify-content: flex-end;
+    justify-content: center;
+    span {
+        font-family: "lilgrotesk regular", sans-serif;
+        color: ivory;
+        opacity: 80%;
+    }
 }
 
 .overall-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 }
+
+/*OUR STORY*/
+
+.story {
+    display: flex;
+    flex-direction: row;
+    .left-story{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i{
+            font-size: 50px;
+        }
+    }
+}
+
+
 
 /*FOOTER*/
 
