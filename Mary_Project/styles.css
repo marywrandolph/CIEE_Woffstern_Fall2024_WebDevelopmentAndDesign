@@ -119,6 +119,63 @@ p{
 }
 }
 
+/*MENU*/
+
+.menu {
+    display:flex;
+    justify-content: space-between;
+    background-color: ivory;
+    .cookie{
+        height: 200px;
+    }
+    .coffee-beans{
+        height: 100px;
+    }
+    .coffee-spacing{
+
+        display: flex;
+        align-items: end;
+    }
+    .center-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        span{
+            font-family: "abolition", sans-serif;
+            font-weight:bold;
+            font-size: 30px
+        }
+        i{
+            font-size: 25px
+        }
+        p{
+            font-family: "lilgrotesk regular", sans-serif;
+            font-style: italic;
+            font-size: 12px
+        }
+    }
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-side{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 8px
+        }
+    }
+    .item-name{
+        display: flex;
+        justify-content: space-between;
+        span{
+            font-size: 20px;
+        }
+    }
+}
+
 /*REASONS*/
 
 .reasons {
@@ -206,11 +263,11 @@ p {
 }
 p::before{
     content: '"';
-    font-size: 200px;
+    font-size: 100px;
 }
 p::after{
     content: '"';
-    font-size: 200px;
+    font-size: 100px;
 }
 
 
@@ -231,14 +288,16 @@ p::after{
     justify-content: center;
     span {
         font-family: "lilgrotesk regular", sans-serif;
-        color: ivory;
-        opacity: 80%;
+        color: black;
+        opacity: 30%;
     }
 }
 
 .overall-text {
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    align-items: center;
 }
 
 }
@@ -248,24 +307,45 @@ p::after{
 .story {
     display: flex;
     flex-direction: row;
-    .left-story{
+    background-color: ivory;
+    .pics{
         display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 50px;
+    }
+    column{
+        display:flex;
         flex-direction: column;
-        align-items: center;
-        i{
-            font-size: 50px;
-        }
+        gap: 10px;
+    }
+    .storypic{
+        height: 250px;
+        width: 250px
+    }
+}
+
+.leftstory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    i{
+        font-size: 50px;
+    }
+    span {
+        font-family: "abolition", sans-serif;
+        font-size: 30px
+    }
+    p{
+        font-family: "lilgrotesk regular", sans-serif;
     }
 }
 
 
 
 /*FOOTER*/
-
-.ivory-box{
-    height: 50px;
-    background-color: ivory;
-}
 
 .footer {
     display: flex;
