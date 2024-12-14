@@ -159,6 +159,8 @@ p{
     .menu-list {
         display: flex;
         flex-direction: row;
+        gap: 20px;
+        justify-content: flex-end;
     }
     .menu-side{
         display: flex;
@@ -173,6 +175,14 @@ p{
         span{
             font-size: 20px;
         }
+    }
+    .drink-pic{
+        height: 50px
+    }
+    .item{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
     }
 }
 
