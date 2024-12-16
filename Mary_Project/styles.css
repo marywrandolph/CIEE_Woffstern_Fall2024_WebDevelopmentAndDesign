@@ -1,39 +1,4 @@
-@media screen and (max-width: 768px) {
-    body{
-    .back-side {
-    background-color: black;
-    .gray {
-        background-color: dimgray;
-    }
-    }
-}
-    
-    }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    body{
-    .back-side {
-    background-color: darkslategray;
-    .gray {
-        background-color: darkseagreen;
-    }
-
-}
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-    body{
-    .back-side {
-    background-color: slategray;
-    
-    .gray {
-        background-color: lightblue;
-    }
-    }
-}
-    }
 
 
 body {
@@ -81,6 +46,7 @@ a {
     color: white;
     text-decoration: none;
     letter-spacing: .2cap;
+    text-align: center;
 }
 
 a:hover {
@@ -194,22 +160,18 @@ p{
             font-size: 12px
         }
     }
-    .menu-list {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        justify-content: flex-end;
-    }
+    
     .menu-side{
         display: flex;
         flex-direction: column;
         p{
-            font-size: 8px
+            font-size: 10px
         }
     }
     .item-name{
         display: flex;
         justify-content: space-between;
+        width: 100%;
         span{
             font-size: 20px;
         }
@@ -221,7 +183,17 @@ p{
         display: flex;
         flex-direction: row;
         gap: 15px;
+        div{
+        width: 100%;
+        }
     }
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
 }
 
 /*REASONS*/
@@ -230,28 +202,29 @@ p{
     display: flex;
     flex-direction: row;
     background-color: #B0CCA3;
-    height: 200px;
     align-items: center;
     justify-content: space-around;
-    .reason{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        span{
-            font-family: "abolition", sans-serif;
-            font-weight:bold;
-            font-size: 25px;
-        }
-        p {
-            font-family: "lilgrotesk regular", sans-serif;
-            font-size: 12px;
-            text-align: center;
-        }
+    padding: 50px;
+}
+.reason{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        font-family: "abolition", sans-serif;
+        font-weight:bold;
+        font-size: 25px;
     }
-    i{
-        font-size: 40px
+    p {
+        font-family: "lilgrotesk regular", sans-serif;
+        font-size: 12px;
+        text-align: center;
     }
 }
+i{
+    font-size: 40px
+}
+
 
 /*LOCATIONS*/
 
@@ -261,26 +234,29 @@ p{
     align-items: center;
     justify-content: space-around;
     background-color: ivory;
-    height: 600px;
-    .location-box {
-        height: 500px;
-        width: max-content;
-        border: solid
-    }
-    .locations-pic {
-        height: 350px;
-        width:fit-content
-    }
-    .location-name {
-        margin-left: 20px;
-    span {
-        font-family: "abolition", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 50px
-    }
-   
+    padding: 50px;
+    gap: 20px
+
 }
+
+.location-box {
+    height: 500px;
+    width: max-content;
+    border: solid
+}
+.locations-pic {
+    height: 350px;
+    width:fit-content
+}
+.location-name {
+    margin-left: 20px;
+span {
+    font-family: "abolition", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px
+}
+
 }
 .location-info {
     display: flex;
@@ -298,12 +274,12 @@ p{
 
 /*QUOTES*/
 .quotes {
-    height: 400px;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
   background-color: rgba(0,101,86,0.8);
+  padding: 50px;
 p {
     font-family: "lilgrotesk regular", sans-serif;
     font-size: 30px;
@@ -319,10 +295,7 @@ p::after{
 }
 
 
-.quote-pic {
-    width: 250px;
-    height: 250px
-}
+
 
 .text {
     display: flex;
@@ -341,13 +314,18 @@ p::after{
     }
 }
 
+}
+
+.quote-pic {
+    height: 250px;
+    width:fit-content
+}
+
 .overall-text {
     display: flex;
     flex-direction: row;
     gap: 30px;
     align-items: center;
-}
-
 }
 
 /*OUR STORY*/
@@ -356,22 +334,26 @@ p::after{
     display: flex;
     flex-direction: row;
     background-color: ivory;
-    .pics{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        padding: 50px;
-    }
+    
     column{
         display:flex;
         flex-direction: column;
         gap: 10px;
     }
+    
+}
+
+.pics{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 50px;
+    }
+
     .storypic{
         height: 250px;
         width: 250px
     }
-}
 
 .leftstory{
     display: flex;
@@ -417,6 +399,7 @@ p::after{
     .location {
         display: flex;
         flex-direction: column;
+        align-items: flex-start
     }
 }
 
@@ -438,3 +421,98 @@ p::after{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.reasons{
+    display:flex;
+    flex-direction: column;
+}
+.locations{
+    display:flex;
+    flex-direction: column;
+}
+.story{
+    flex-direction: column-reverse;
+}
+
+.storypic{
+    height: 200px;
+    width: 200px
+}
+.quotes {
+    flex-direction: column-reverse;
+    p{
+        font-size: 25px;
+    }
+}
+.overall-text{
+    flex-direction: column-reverse;
+}
+
+}
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .reasons{
+        span{
+            font-size: 20px;
+        }
+        p {
+            font-size: 10px;
+        }
+    
+    i{
+        font-size: 35px
+    }
+    }
+    .location-box {
+        height: 400px;
+        width: fit-content;
+        border: solid
+    }
+    .locations-pic {
+        height: 250px;
+        width:fit-content
+    }
+    .location-name {
+        margin-left: 10px;
+    span {
+        font-family: "abolition", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px
+    }
+    
+    }
+    .location-info {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        justify-content: space-around;
+        span{
+            font-family: "lilgrotesk bold", sans-serif;
+        }
+        p {
+            font-family: "lilgrotesk regular", sans-serif;
+            font-size: 10px
+        }
+    }
+    .story{
+        flex-direction: column-reverse;
+    }
+    .quotes{
+        p{
+            font-size: 25px;
+        }
+    }
+    .quote-pic {
+        height: 200px;
+        width:fit-content
+    }
+    }
