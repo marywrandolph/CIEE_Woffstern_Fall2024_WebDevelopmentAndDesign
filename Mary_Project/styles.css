@@ -1,3 +1,41 @@
+@media screen and (max-width: 768px) {
+    body{
+    .back-side {
+    background-color: black;
+    .gray {
+        background-color: dimgray;
+    }
+    }
+}
+    
+    }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    body{
+    .back-side {
+    background-color: darkslategray;
+    .gray {
+        background-color: darkseagreen;
+    }
+
+}
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+    .back-side {
+    background-color: slategray;
+    
+    .gray {
+        background-color: lightblue;
+    }
+    }
+}
+    }
+
+
 body {
     margin: 0px
    
@@ -182,7 +220,7 @@ p{
     .item{
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 15px;
     }
 }
 
@@ -366,6 +404,14 @@ p::after{
     background-color: ivory;
     a{
         color: black;
+    }
+    span{
+        font-family: "abolition", sans-serif;
+        font-size: 25px 
+    }
+    p{
+        font-family: "lilgrotesk regular", sans-serif;
+        font-size: 8px
     }
 
     .location {
