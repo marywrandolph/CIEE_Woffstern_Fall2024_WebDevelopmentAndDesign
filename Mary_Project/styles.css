@@ -1,15 +1,20 @@
+
+
+
 body {
     margin: 0px
+   
 }
 
 
+/*HEADER*/
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    background-color: #B0CCA3;
+    background-color: ivory;
     height: 75px;
 
 }
@@ -17,12 +22,14 @@ body {
 .webmenu {
     display: flex;
     flex-direction: row;
-    gap: 30px
-
+    gap: 30px;
+    a{
+    color: black;
+    }
 }
 
 .logo {
-    height: 70px;
+    height: 30px;
     width:auto
 }
 
@@ -34,24 +41,37 @@ body {
 }
 
 a {
-    font-family: 'Courier New';
+    font-family: "abolition", sans-serif;
     font-weight:bold;
     color: white;
+    text-decoration: none;
+    letter-spacing: .2cap;
+    text-align: center;
+}
+
+a:hover {
+    color: #A2845A
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Courier New';
     font-weight:bold;
     width: 100px;
     height: 50px;
-    background-color: transparent;
+    background-color: rgb(60, 41, 5);
     border: solid;
     color: white;
 }
 
 .button:hover {
-    background-color: #A2845A;
+    background-color: transparent;
+    color: #A2845A;
 }
+
+/*BANNER*/
 
 .banner {
     height: 400px;
@@ -69,7 +89,7 @@ a {
 
 .banner{
 .banner-logo{
-    width: 500px;
+    width: 150px;
     height:fit-content
 }
 
@@ -84,52 +104,438 @@ a {
     .menu-button:hover{
         background-color: transparent;
     }
+    .locations-button {
+        background-color: transparent;
+    }
+    .locations-button:hover{
+        background-color: #A2845A;
+        color: white;
+        a {
+            color: white
+        }
+    }
 }
 
 p{
     font-size: 20px;
-    font-family: "Courier New";
+    font-family: "lilgrotesk regular", sans-serif;
     font-style: italic;
 }
 }
 
+/*MENU*/
+
+.menu {
+    display:flex;
+    justify-content: space-between;
+    background-color: ivory;
+    .cookie{
+        height: 200px;
+    }
+    .coffee-beans{
+        height: 100px;
+    }
+    .coffee-spacing{
+
+        display: flex;
+        align-items: end;
+    }
+    .center-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        span{
+            font-family: "abolition", sans-serif;
+            font-weight:bold;
+            font-size: 30px
+        }
+        i{
+            font-size: 25px
+        }
+        p{
+            font-family: "lilgrotesk regular", sans-serif;
+            font-style: italic;
+            font-size: 12px
+        }
+    }
+    
+    .menu-side{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 10px
+        }
+    }
+    .item-name{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        span{
+            font-size: 20px;
+        }
+    }
+    .drink-pic{
+        height: 50px
+    }
+    .item{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        div{
+        width: 100%;
+        }
+    }
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+/*REASONS*/
+
+.reasons {
+    display: flex;
+    flex-direction: row;
+    background-color: #B0CCA3;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+.reason{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        font-family: "abolition", sans-serif;
+        font-weight:bold;
+        font-size: 25px;
+    }
+    p {
+        font-family: "lilgrotesk regular", sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+i{
+    font-size: 40px
+}
+
+
+/*LOCATIONS*/
+
+.locations{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: ivory;
+    padding: 50px;
+    gap: 20px
+
+}
+
+.location-box {
+    width: max-content;
+    border: solid
+}
+.locations-pic {
+    height: 350px;
+    width:fit-content
+}
+.location-name {
+    margin-left: 20px;
+span {
+    font-family: "abolition", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px
+}
+
+}
+.location-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-around;
+    gap: 5px;
+    span{
+        font-family: "lilgrotesk bold", sans-serif;
+    }
+    p {
+        font-family: "lilgrotesk regular", sans-serif;
+        font-size: 10px;
+    }
+}
+
+.responsive-loc {
+    width:100%;
+    height: 250px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*QUOTES*/
 .quotes {
-    height: 400px;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
   background-color: rgba(0,101,86,0.8);
-}
-
-
-.quotes{
+  padding: 50px;
 p {
-    font-family: "Courier New";
+    font-family: "lilgrotesk regular", sans-serif;
     font-size: 30px;
     font-style: italic;
 }
-
-.quote-mark2 {
-    display: flex;
-    align-items: flex-end
+p::before{
+    content: '"';
+    font-size: 100px;
+}
+p::after{
+    content: '"';
+    font-size: 100px;
 }
 
 
-.quote-marks {
-    width: 70px;
-    height: 70px
-}
 
-.quote-pic {
-    width: 250px;
-    height: 250px
-}
 
 .text {
     display: flex;
     justify-content: space-between;
-    width: 500px
-}
+    flex-direction: column;
 }
 
+.quote-speaker{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    span {
+        font-family: "lilgrotesk regular", sans-serif;
+        color: black;
+        opacity: 30%;
+    }
+}
+
+}
+
+.quote-pic {
+    height: 250px;
+    width:fit-content
+}
+
+.overall-text {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+/*OUR STORY*/
+
+.story {
+    display: flex;
+    flex-direction: row;
+    background-color: ivory;
+    
+    column{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+.pics{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .storypic{
+        height: 250px;
+        width: 250px;
+    }
+
+.leftstory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    i{
+        font-size: 50px;
+    }
+    span {
+        font-family: "abolition", sans-serif;
+        font-size: 30px
+    }
+    p{
+        font-family: "lilgrotesk regular", sans-serif;
+    }
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px
+
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border: solid;
+    background-color: ivory;
+    a{
+        color: black;
+    }
+    span{
+        font-family: "abolition", sans-serif;
+        font-size: 25px 
+    }
+    p{
+        font-family: "lilgrotesk regular", sans-serif;
+        font-size: 8px
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    width: 700px;
+    
+}
+
+.socials {
+    display: flex;
+    height: 100px;
+    width: 150px;
+    i {
+        font-size: 40px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.reasons{
+    display:flex;
+    flex-direction: column;
+}
+.locations{
+    display:flex;
+    flex-direction: column;
+}
+.story{
+    flex-direction: column-reverse;
+}
+
+.storypic{
+    height: 200px;
+    width: 200px
+}
+.quotes {
+    flex-direction: column-reverse;
+}
+
+.quotes{
+    p{
+        font-size: 25px;
+    }
+}
+.overall-text{
+    flex-direction: column-reverse;
+}
+
+}
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .reasons{
+        span{
+            font-size: 20px;
+        }
+        p {
+            font-size: 10px;
+        }
+    
+    i{
+        font-size: 35px
+    }
+    }
+    .location-box {
+        height: 400px;
+        width: fit-content;
+        border: solid
+    }
+    .locations-pic {
+        height: 250px;
+        width:fit-content
+    }
+    .location-name {
+        margin-left: 10px;
+    span {
+        font-family: "abolition", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px
+    }
+    
+    }
+    .location-info {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        justify-content: space-around;
+        span{
+            font-family: "lilgrotesk bold", sans-serif;
+        }
+        p {
+            font-family: "lilgrotesk regular", sans-serif;
+            font-size: 10px
+        }
+    }
+    .story{
+        flex-direction: column-reverse;
+    }
+    .quotes{
+        p{
+            font-size: 25px;
+        }
+    }
+    .quote-pic {
+        height: 200px;
+        width:fit-content
+    }
+    }

@@ -2,58 +2,284 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta property="og:title" content="Coffee Cube">
+    <meta property="og:description" content="Good Coffee, Better People">
+    <meta property="og:image" content="assets/banner/logo.png">
+    <meta property="og:url" content="https://mary.cieeprague.cz">
+    <meta property="og:type" content="website">
+    <title>Coffee Cube</title>
+    <link rel="stylesheet" href="./styles.css?version=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/banner/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.typekit.net/oye1rzj.css">
     </head>
 </html>
 
 <body>
     <header>
-    <div class="header">
+    <div class="header" id="header">
         <div class="left-header">
-        <img class="logo" src="assets/header/logo.png" alt="Coffe Cube Logo">
+        <img class="logo" src="assets/header/logo-banner.png" alt="Coffe Cube Logo">
         <div class="webmenu">
-            <div><a>MENU</a></div>
-            <div><a>LOCATION</a></div>
-            <div><a>OUR STORY</a></div>
+            <div><a href="#menu">MENU</a></div>
+            <div><a href="#locations">LOCATION</a></div>
+            <div><a href="#story">OUR STORY</a></div>
         </div>
         </div>
         <div class="button">
-        <a target="_blank" href="#section3">ORDER NOW</a>
+        <a href="#menu">ORDER NOW</a>
         </div>
     </div>
 </header>
 <main>
 <!--Banner-->
-<div class="banner">
-<img class="banner-logo" src="assets/banner/logo-banner.png">
+<div class="banner" id="banner">
+<img class="banner-logo" src="assets/banner/logo.png" alt="Coffee Cube Logo">
 <p>Stop by and join our community, or order a drink online!</p>
 <div class="buttons">
-    <div><button type="button">OUR LOCATIONS</button></div>
-    <div><button class="menu-button"type="button">OUR MENU</button></div>
+    <div class="button locations-button"><a href="#locations">LOCATIONS</a></div>
+    <div class="button menu-button"><a href="#menu">OUR MENU</a></div>
 </div>
+</div>
+
+<!--Menu-->
+
+<div class="menu" id="menu">
+    <img class = "cookie" src="assets/bestsellers/cookie.png" alt="Half of a cookies">
+    <div class="center-menu">
+        <span>BESTSELLERS</span>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-coffee-bean"></i>
+        <p>Try one of our amazing coffees, made with love</p>
+        <div class="menu-list">
+            <div class="menu-side">
+                <div  class="item">
+                    <img class="drink-pic" src="assets/bestsellers/cap.png" alt="Cappucino">
+                    <div>
+                        <div class="item-name">
+                            <span>CAPPUCINO........</span>
+                            <span>80 Kč</span>
+                        </div>
+                        <p>A classic blend of rich espresso, velvety steamed milk, and a frothy cap of foam for the perfect morning pick-me-up.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="drink-pic" src="assets/bestsellers/latte.png" alt="latte">
+                    <div>
+                        <div class="item-name">
+                            <span>LATTE........</span>
+                            <span>85 Kč</span>
+                        </div>
+                        <p>Smooth espresso paired with creamy steamed milk, offering a harmonious balance of bold and comforting flavors.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="drink-pic" src="assets/bestsellers/mocha.png" alt="mocha">
+                    <div>
+                        <div class="item-name">
+                            <span>MOCHA........</span>
+                            <span>90 Kč</span>
+                        </div>
+                        <p>A delightful fusion of espresso, velvety chocolate, and milk, topped with whipped cream for a touch of indulgence.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="drink-pic" src="assets/bestsellers/chai.png" alt="dirty chai">
+                    <div>
+                        <div class="item-name">
+                            <span>DIRTY CHAI........</span>
+                            <span>95 Kč</span>
+                        </div>
+                        <p>The perfect mix of spicy chai tea, creamy milk, and a shot of espresso for a bold and aromatic twist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-side">
+                <div class = "item">
+                    <img class="drink-pic" src="assets/bestsellers/matcha.png" alt="matcha">
+                    <div>
+                        <div class="item-name">
+                            <span>MATCHA LATTE........</span>
+                            <span>90 Kč</span>
+                        </div>
+                        <p>A vibrant and creamy blend of premium green tea matcha and steamed milk, offering a naturally energizing boost.</p>
+                    </div>
+                </div>
+                <div class = "item">
+                    <img class="drink-pic" src="assets/bestsellers/spirulina.png" alt="spirulina latte">
+                    <div>
+                        <div class="item-name">
+                            <span>SPIRULINA LATTE........</span>
+                            <span>95 Kč</span>
+                        </div>
+                        <p>A superfood treat combining nutrient-rich spirulina with creamy milk for a colorful and healthful sip.</p>
+                    </div>
+                </div>
+                <div class = "item">
+                    <img class="drink-pic" src="assets/bestsellers/chocolate.png" alt="hot chocolate">
+                    <div>
+                        <div class="item-name">
+                            <span>HOT CHOCOLATE........</span>
+                            <span>80 Kč</span>
+                        </div>
+                        <p>A cozy cup of smooth, rich chocolate, perfect for warming up on any day.</p>
+                    </div>
+                </div>
+                <div class = "item">
+                    <img class="drink-pic" src="assets/bestsellers/tea.png" alt="tea">
+                    <div>
+                        <div class="item-name">
+                            <span>FRESH TEA........</span>
+                            <span>80 Kč</span>
+                        </div>
+                        <p>A refreshing selection of freshly brewed loose-leaf teas, highlighting pure, natural flavors in every cup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="coffee-spacing"><img class="coffee-beans" src="assets/bestsellers/coffee-beans.png" alt="coffee beans"></div>
+</div>
+
+<!--Reasons-->
+
+<div class = "reasons" id="reasons">
+    <div class = "reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-coffee"></i>
+        <span>QUALITY COFFEE</span>
+        <p>We only serve the best coffee to our customers.</p>
+    </div>
+    <div class = "reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-users-three"></i>
+        <span>COMMUNITY</span>
+        <p>We care about everyone who comes through our doors.</p>
+    </div>
+    <div class = "reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-cheers"></i>
+        <span>DRINK VARIETY</span>
+        <p>We serve everything from coffee to cocktails to tea.</p>
+    </div>
+    <div class="reason">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-pint-glass"></i>
+        <span>COFFEE TO-GO</span>
+        <p>Come pick up a drink on your lunch break!</p>
+    </div>
 </div>
 
 <!--Locations-->
-
+<div class = "locations" id = "locations">
+    <div class = "location-box">
+        <div class="responsive-loc"><img class = "locations-pic" src="assets/locations/original.png" alt="Coffee Cube Original"></div>
+       <div class="location-name">
+        <span>COFFEE CUBE ORIGINAL</span>
+       </div> 
+       <div class="location-info">
+        <div>
+            <span>Hours</span>
+            <p>Mon to Fri: 8am to 7pm</p>
+            <p>Sat: 10am to 7pm Sun: 10am to 6pm</p>
+        </div>
+        <div>
+            <span>Address</span>
+            <p>Jakubská, 110 00 Staré Město</p>
+        </div>
+        <div class="button locations-button"><a target="_blank" href="https://www.google.com/maps/place/Coffee+Cube/@50.0885651,14.4239994,563m/data=!3m2!1e3!4b1!4m6!3m5!1s0x470b94ea513b6b67:0x809de6f95bacdbb0!8m2!3d50.0885617!4d14.4265743!16s%2Fg%2F11b77d69q5?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D">GET DIRECTIONS</a></div>
+       </div>
+    </div>
+    <div class = "location-box">
+        <div class="responsive-loc"><img class = "locations-pic" src="assets/locations/black.jpg" alt="Coffee Cube Black"></div>
+        <div class="location-name">
+         <span>COFFEE CUBE BLACK</span>
+        </div> 
+        <div class="location-info">
+         <div>
+            <span>Hours</span>
+            <p>Mon to Fri: 8:30am to 7pm</p>
+            <p>Sat & Sun: 10am to 6pm</p>
+         </div>
+         <div>
+            <span>Address</span>
+            <p>Jungmannovo nám. 6/767, 110 00 Můstek</p>
+        </div>
+        <div class="button locations-button"><a target="_blank" href="https://www.google.com/maps/place/Coffee+Cube+Black/@50.083434,14.4203495,563m/data=!3m2!1e3!4b1!4m6!3m5!1s0x470b957ed5b80297:0xa2d33c63bedd8f29!8m2!3d50.0834306!4d14.4229244!16s%2Fg%2F11hdvvdcz5?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D">GET DIRECTIONS</a></div>
+        </div>
+     </div>
+</div>
 
 
 <!--QUOTE-->
 <div class="quotes">
+    <div class = "overall-text">
     <div class="text">
-        <img class="quote-marks" src="assets/quotes/quotes2.png">
+        <div>
         <p>Life's too short to drink bad coffee.</p>
-        <div class='quote-mark2'>
-        <img class="quote-marks" src="assets/quotes/quotes.png">
     </div>
+    <div class = "quote-speaker">
+        <span>Gord Downie</span>
     </div>
-    <img class = "quote-pic" src="assets/quotes/quotes-pic.jpg">
+</div>
+    <img class = "quote-pic" src="assets/quotes/quotes-pic.jpg" alt="Picture of Coffee Cube">
+</div>
 </div>
 
+<!--OUR STORY-->
+
+<div class = "story" id="story">
+    <div class = "leftstory">
+        <span>OUR STORY</span>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <i class="ph ph-minus"></i>
+        <p>Nestled in the heart of Prague, Coffee Cube began as a dream to bring people together over a shared love for exceptional coffee and meaningful connections. Inspired by the vibrant spirit of the city and its rich café culture, we’ve crafted a cozy space where tradition meets modernity. Every cup is brewed with passion, using ethically sourced beans from sustainable farms, ensuring every sip tells a story of quality and care. At Coffee Cube, it’s not just about the coffee; it’s about the moments we share and the community we create—one cup at a time.</p>
+        <div class="buttons">
+            <div class="button locations-button"><a href="#locations">LOCATIONS</a></div>
+        </div>
+    </div>
+    <div class="pics">
+        <div class="column">
+            <img src="assets/our-story/story1.png" class="storypic" alt="People at Coffee Cube">
+            <img src="assets/our-story/story3.png" class="storypic" alt="Cup of Coffee">
+        </div>
+        <div class="column">
+            <img src="assets/our-story/story4.png" class="storypic" alt="Outside of coffee Cube">
+            <img src="assets/our-story/story2.png" class="storypic" alt="People at coffee Cube">
+        </div>
+    </div>
+
+
 </main>
-<footer>
-
-
+<div class = "footer">
+<div class = "left-footer">
+<div>
+    <img class="logo" src="assets/header/logo-banner.png" alt="Coffe Cube Logo">
+</div>
+<div>
+    <div><a href="#menu">MENU</a></div>
+    <div><a href="#story">OUR STORY</a></div>
+    <div><a href="mailto:coffeecubeprague@gmail.com">CONTACT US</a></div>
+</div>
+<div>
+    <div><span>VISIT US</span></div>
+    <div class = "location">
+        <a href="https://www.google.com/maps/place/Coffee+Cube/@50.0885651,14.4239994,563m/data=!3m2!1e3!4b1!4m6!3m5!1s0x470b94ea513b6b67:0x809de6f95bacdbb0!8m2!3d50.0885617!4d14.4265743!16s%2Fg%2F11b77d69q5?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D">Coffee Cube Original</a>
+        <p>Jakubská, 110 00 Staré Město</p>
+    </div>
+    <div class = "location">
+        <a href="https://www.google.com/maps/place/Coffee+Cube+Black/@50.083434,14.4203495,563m/data=!3m2!1e3!4b1!4m6!3m5!1s0x470b957ed5b80297:0xa2d33c63bedd8f29!8m2!3d50.0834306!4d14.4229244!16s%2Fg%2F11hdvvdcz5?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D">Coffee Cube Black</a>
+        <p>Jungmannovo nám. 6/767, 110 00 Můstek</p>
+    </div>
+</div>
+</div>
+<div class = "socials">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <a href="https://www.facebook.com/coffeecubeoriginal/"><i class="ph ph-facebook-logo"></i></a>
+    <a href="https://www.instagram.com/coffeecubeofficial/"><i class="ph ph-instagram-logo"></i></a>
+</div>
+</div>
 </footer>
 
 
