@@ -5,85 +5,227 @@
         <title>Coffee Cube Website</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+        <script src="https://unpkg.com/phosphor-icons"></script>    
     </head>
 <body>
-    <div class="banner"></div>
-    <div class="welcome">
-        <h1 class="white header">Welcome to Coffee Cube</h1>
-        <p class="white paragraph">Welcome to Coffee Cube, where great coffee meets great company! We can't wait to see you.</p>
-        <a href= "#story" class="more">Learn More</a>
-    </div>
-    <div class="section story">
-        <img class="picture-left story" src="./assets/our story/Beans.png" alt="Coffee Beans">
+    <!--<header>
+        <h1></h1>
+        <div class="welcome">
+            <div class="white header">Welcome to Coffee Cube</div>
+            <p class="white paragraph">Welcome to Coffee Cube, where great coffee meets great company! We can't wait to see you.</p>
+            <a href="#story" class="more">Learn More</a>
+        </div>
+    </header>-->
+    <nav class="navigation">
         <div>
-            <h2 class="white story-right story this">This is our story</h2>
+            <img class="head-left" src="assets/header/logo.svg">
+        </div>
+        <div class="links">
+            <div>
+            <a href="Shop" class="head-middle">Shop</a>
+            <a href="#ourstory" class="head-middle">Our Story</a>
+            <a href="#location" class="head-middle">Locations</a>
+            <a href="Menu" class="head-middle">Menu</a>
+            <i class="ph ph-instagram-logo"></i>
+        </div>
+            <div><a href="#" class="ordernow">Order Now</a></div>
+
+        </div>
+    </nav>
+    <header class="welcome">
+        <div class="welcome-container">
+            <h2 class="white header">Welcome to Coffee Cube</h2>
+            <p class="white paragraph">Welcome to Coffee Cube, where great coffee meets great company! We can't wait to see you.</p>
+            <a href= "#story" class="more">Learn More</a>
+        </div>
+    </header>
+    <section class="section story" id="ourstory">
+        <img class="picture-left story" src="./assets/our-story/Beanstory.png" alt="Coffee Beans">
+        <div>
+            <h3 class="white story-right story this">This is our story</h3>
             <p class="white story-right story that">At Coffee Cube, we're all about bringing people together. Whether it's friends sharing stories, families making memories, or simply enjoying great coffee, we've created a space where everyone feels at home. With every cup, we're proud to serve quality that inspires connection and conversation.</p>
-            <a href="story" class="more gap-one ">Read More</a>
+            <a href="story" class="more gap-one story-right">Read More</a>
             <div></div>
         </div>
-    </div>
-    <div class="section">
-        <div class="features">
-            <div>
-                <h3 class="">left</h3>
-                <p></p>
+    </section>
+    <section class="reasons">
+        <div class="reasons-icontxt">
+            <div class="edit-text">
+                <i class="ph ph-drop"></i>
+                <div class="icons-text ">We pride ourselves on quality beans.</div>
             </div>
-            <div>
-                <h3>middle</h3>
-                <p></p>
+            <div class="edit-text">
+                <i class="ph ph-coffee"></i>
+                <div class="icons-text">Discover the finest, freshly brewed coffee!</div>
             </div>
-            <div>
-                <h3>right</h3>
-                <p></p>
+            <div class="edit-text">
+                <i class="ph ph-users"></i>
+                <div class="icons-text">Make it a coffee date, bring your friends and family for a perfect brew!</div>
             </div>
         </div>
-    </div>
-    <div class="menu">
+    </section>
+    <section class="quote">
+        <div class="quote-left">
+            <div class="quote-text">
+                <span>Brewing laughter, love, and unforgettable moments!</span>
+            </div>
+        </div>
+        <div class="quote-right">
+            <section>
+                <img src="assets/quote/Image 12.png">
+            </section>
+        </div>
+    </section>
+    
+    <section class="coffee-menu">
         <h2>Coffee Menu</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <h3>item</h3>
-                <p>price</p>
-            </div>
-            <div class="menu-item">
-                <h3>item</h3>
-                <p>price</p>
-            </div>
-        </div>
-    </div>
+        <div class="menu-intro">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="assets/bestsellers/espresso.png" class="espresso">
+                    <div class="menu-details">
+                        <h3>Espresso</h3>
+                        <p>A rich concentrated shot of coffee with bold flavor and a smooth velvety finish.</p>
+                    </div>
+                </div>
+            
+            
+                <div class="menu-item">
+                    <img src="assets/bestsellers/americano.png" class="americano">
+                    <div class="menu-details">
+                        <h3>Americano</h3>
+                        <p>Two shots of espresso diluted with hot water, smooth coffee with a balanced intensity and hint of crema.</p>
+                    </div>
+                </div>
 
-    <div class="section">
-        <h2>Our Gallery</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="Gallery Image 1">
-            <img src="image2.jpg" alt="Gallery Image 2">
-            <img src="image3.jpg" alt="Gallery Image 3">
-        </div>
-    </div>
-    <div class="section">
-        <div class="locations">
-            <div class="location">
-                <h3>Coffee Cube</h3>
-                <p>Hours: 8 AM - 6 PM</p>
-                <p>Sat & Sun: 8 AM - 8 PM</p>
-                <a href="#" class="btn">Get Directions</a>
+
+
+                <div class="menu-item">
+                    <img src="assets/bestsellers/macchiato.png" class="macchiato">
+                    <div class="menu-details">
+                        <h3>Macchiato</h3>
+                        <p>A bold espresso shot, delicately topped with a dollop of velvety steamed milk.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="menu-item">
+                    <img src="assets/bestsellers/cappuccino.png" class="cappuccino">
+                    <div class="menu-details">
+                        <div class="coffee-name"><h3>Cappucino</h3><span>80</span></div>
+                        <div class="coffee-description"><p>A balanced blend of espresso steamed milk, and a layer of velvety foam.</p></div>
+                    </div>
+                </div>
+
+            
+                <div class="menu-item">
+                    <img src="assets/bestsellers/latte.png" class="latte">
+                    <div class="menu-details">
+                        <h3>Latte</h3>
+                        <p>A smooth and creamy espresso shot over steamed milk, topped with a light layer of foam.</p>
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <img src="assets/bestsellers/flatwhite.png" class="flatwhite">
+                    <div class="menu-details">
+                        <h3>Flat White.......85</h3>
+                    <p>A rich and velvety coffee crafted with a bold shot of espresso and a smooth layer of micro-foamed milk.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="assets/bestsellers/mocha.png" class="mocha">
+                    <div class="menu-details">
+                        <h3>Mocha</h3>
+                        <p>A fusion of espresso, steamed milk, and rich chocolate syrup, topped with a touch of whipped cream or a dusting of cocoa powder.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="assets/bestsellers/dirtychai.png" class="dirtychai">
+                    <div class="menu-details">
+                        <h3>Dirty Chai</h3>
+                        <p>A warm, spicy blend of chai tea and espresso, combined with steamed milk for a rich, creamy texture.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery top">Our Gallery</div>
+        <p class="gallery-descrip">Explore our collection of wonderful coffee moments. From freshly brewed to artistic latte art, these images  showcase the coffee experience here!</p>
+        <div class="gallery-container">
+            <div class="gallery-item"> <img src="assets/gallery/GalleryImage1.png" alt="Gallery1"></div>
+            <div class="gallery-item"> <img src="assets/gallery/GalleryImage2.png" alt="Gallery2"></div>
+            <div class="gallery-item"> <img src="assets/gallery/GalleryImage3.png" alt="Gallery3"></div>
+            <div class="gallery-item"> <img src="assets/gallery/GalleryImage4.png" alt="Gallery4"></div>
+        </div>
+    </section>
+
+    <section class="locations" id="location">
             <div class="location">
-                <h3>Coffee Cube Original</h3>
-                <p>Hours</p>
-                <a href=""></a>
+                <div><img src="assets/locations/ccblack.png" alt="CoffeeCubeBlack"></div>
+                <div class="location-detail">
+                    <div>
+                        <h3>Coffe Cube Black</h3>
+                    </div>
+                    <div class="location-info">
+                        <div>
+                            <p>Hours: 8:00 - 19:00</p>
+                            <p>Sat & Sun: CLOSED</p>
+                        </div>
+                        <div>
+                            <p>Address</p>
+                            <p>Jungmannovo nám 6/767, 100 00 Mustek</p>
+                        </div>
+                        <div><a href="https://maps.app.goo.gl/fnDYcHnttwnD98796" class="get-directions" target="_blank">Get Directions</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location">
+                <div><img src="assets/locations/ccoriginal.png" alt="CoffeeCube"></div>
+                <div>
+                    <h3>Coffee Cube Original</h3>
+                    <div>
+                        <p>Hours: 8:00 - 19:00</p>
+                        <p>Sat & Sun: CLOSED</p>
+                    </div>
+                    <div>
+                        <p>Address</p>
+                        <p>Jakubská, 110 00 Staré Město</p>
+                    </div>
+                    <a href="" class="get-directions">Get Directions</a>
+                </div>
+            </div>
+    </section>
+    <footer class="footer-container">
+        <div >
+            <img src="assets/header/logo.svg" class="footer-left">
+        </div>
+        <div class="footer-links">
+            <div>
+                <a href="#" class="footer-links">Shop</a>
+                <a href="#" class="footer-links">Coffee Club</a>
+                <a href="#" class="footer-links">Our Story</a>
+                <a href="#" class="footer-links">Contact Us</a>
+            </div>
+            
+            <div>
+                <h4>VISIT US</h4>
+                <div>Location 1</div>
+                <div>Location 2</div>
             </div>
         </div>
-    </div>
-    <div>
-        <p></p>
-        <p>
-            <a href="#">Shop</a>
-            <a href="#">Coffee Club</a>
-            <a href="#">Our Story</a>
-            <a href="#">Contact Us</a>
-        </p>
-    </div>
+        <div>
+            <i class="ph ph-facebook-logo"></i>
+            <i class="ph ph-instagram-logo"></i>
+        </div>
+    </footer>
 
 </body>
 </html>
