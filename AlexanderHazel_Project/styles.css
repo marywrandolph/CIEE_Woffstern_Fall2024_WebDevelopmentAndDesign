@@ -19,6 +19,8 @@
     max-height: fit-content;
     font-size: 20px;
     padding: 4px;
+    color: black;
+    max-width: fit-content;
 }
 .logo{
     max-height: 100px;
@@ -26,10 +28,11 @@
 .footer{
     display: flex;
     justify-content: space-around;
+    background-color: lightgray;
+    width: 100%;
 }
 .font{
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .white{
     color: white;
@@ -41,19 +44,22 @@
 .image-size{
     width: 100%;
     height: 500px;
+    border-radius: 10px;
 }
 .banner{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
-.gap{
-    gap: 50px;
-}
+
 .bannerword{
     width: 50%;
     height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .logos{
     display: flex;
@@ -62,6 +68,9 @@
 .footerpics{
     max-width: 75px;
     max-height: 75px;
+    background-color: darkgray;
+    border-bottom-style: solid;
+    border-color: black;
 }
 .flex{
     display: flex;
@@ -72,4 +81,116 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.ourstorypics{
+    display: flex;
+
+}
+.smaller{
+    max-height: 25%;
+    max-width: 25%;
+}
+
+
+.locations {
+    width: 100%;
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.nameoflocation {
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-start;
+    text-indent: 30px;
+}
+
+.hours{
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    gap: 1rem;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    gap: 1rem;
+}
+
+.ccoriginal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ccblack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationtextbox {
+    width: 600px;
+    height: 295px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rectanglebutton {
+    display: flex;
+    width: 150px;
+    height: 35px;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 600px;
+    height: 550px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.locimg{
+    height: 350px;
+    width: 550px;
+    display: flex;
+}
+.reasonflex{
+    display: flex;
+    flex-direction: column;
+}
+.bold{
+    font-weight: bold;
+}
+.reasonmiddle{
+    font-size: 32pt;
+}
+.reasontop{
+    font-size: 24pt;
+}
+.mainreason{
+    display: flex;
+    gap: 5px;
+    background-color: lightgray;
+}
+.reasonpic{
+    width: 100%;
+    height: 100%;
+}
+.picside{
+    width: 50%;
 }

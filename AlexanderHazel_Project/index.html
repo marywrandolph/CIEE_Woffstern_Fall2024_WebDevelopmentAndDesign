@@ -10,49 +10,65 @@
 </html>
 <body class="font">
     <header>
-        <section class="header"> <!--Header-->
-            <div><img src="./assets/InCodeAssets/coffeecubelogo.png" alt="Logo" class="logo"></div>
+        <section class="header" id="home"> <!--Header-->
+            <div><img src="./assets/InCodeAssets/logocz.png" alt="Logo" class="logo"></div>
             <div class="headerMenu">
-                <div class="button">Home</div>
-                <div class="button">About Us</div>
-                <div class="button">Gallery</div>
-                <div class="button">Menu</div>
-                <div class="button">Contact</div>
+                <a href="#home" class="button">Home</a>
+                <a href="#aboutus" class="button">About Us</a>
+                <a href="#gallery" class="button">Gallery</a>
+                <a href="#menu" class="button">Menu</a>
+                <a href="#footer" class="button">Contact</a>
             </div>
         </section>
     </header>
+
+
     <main class="flex">
         <section class="banner"> <!--Banner-->
             <div class="bannerword">
-                <h2> A Roasted Coffee For You</h2>
+                <h2 class="reasontop"> A Roasted Coffee For You</h2>
                 <div>This Coffee is brewed by first roasting the green coffee beans over hot coals, and perfectly finished off by brewing the perfect coffee.  We know this is a cup that you will enjoy! </div>
-                <div class="button white blackground gap">Shop Now</div>
+                <a href="#menu" class="button white blackground gap">Shop Now</a>
             </div>
-            <div><img src="./assets/InCodeAssets/coffeebanner.png" Alt="coffee cup"  class="image-size"></div>
+            <div class="test"><img src="./assets/InCodeAssets/coffeebanner1.jpg" Alt="coffee cup"  class="image-size"></div>
         </section>
-        <section> <!--Reasons-->
-            <div></div>
-            <div>
-                <span>A Taste Of Prague</span>
-                <span>Start Your Day and Journey Here.</span>
+
+
+
+        <section class="mainreason"> <!--Reasons-->
+            <div class="picside"><img src="./assets/InCodeAssets/pourover.jpeg" alt="pourover" class="reasonpic"></div>
+            <div class="reasonflex">
+                <span class="bold reasontop">A Taste Of Prague</span>
+                <span class="bold reasonmiddle">Start Your Day and Journey Here.</span>
+                <br>
                 <div>We offer the best coffee in Prague with a warm environment that makes everyone feel welcome and gets people excited about their cup of coffee.  This is more than just a coffee shop.</div>
+                <br>
                 <div>Come visit us and see how good coffee can be.  We take pride in our ingredients and methods and would love to see you at our shop!</div>
-                <div>Learn More</div>
+                <br>
+                <div class="button">Learn More</div>
             </div>
         </section>
-        <section> <!--Our Story-->
+
+
+        <section id="aboutus"> <!--Our Story-->
             <div>
                 <span>Our Story</span>
                 <div>We came together as a group and decided that good coffee is something that all people should be able to enjoy, not just something that fanatics like us brew at home.  We had all bonded over coffee whether it be social, or just about the coffee.  We want that for you.</div>
                 <span>About Us</span>
             </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="ourstorypics">
+                <div> 
+                    <div><img src="./assets/InCodeAssets/coffee1.jpeg" alt="coffee" class="smaller"></div>
+                    <div><img src="./assets/InCodeAssets/coffee2.jpeg" alt="coffee" class="smaller"></div>
+                </div>
+                <div>
+                    <div><img src="./assets/InCodeAssets/coffee3.jpeg" alt="coffee" class="smaller"></div>
+                    <div><img src="./assets/InCodeAssets/coffee4.jpeg" alt="coffee" class="smaller"></div>
+                </div>
             </div>
         </section>
+
+
         <section> <!--Quote-->
             <div>
                 <div></div>
@@ -60,7 +76,9 @@
             </div>
             <div></div>
         </section>
-        <section> <!--Best Sellers-->
+
+
+        <section id="menu"> <!--Best Sellers-->
             <span></span>
             <div>
                 <div></div>
@@ -72,7 +90,9 @@
             </div>
             <div></div>
         </section>
-        <section> <!--Gallery-->
+
+
+        <section id="gallery"> <!--Gallery-->
             <div></div>
             <div>
                 <div>
@@ -88,7 +108,9 @@
                 </div>
             </div>
         </section>
-        <section> <!--Locations-->
+
+
+       <!-- <section> <!--Locations
             <div>
                 <div></div>
                 <div>
@@ -122,22 +144,79 @@
                             <span></span>
                         </div>
                         <div></div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="locations" id="locationsid">
+            <div class="ccoriginal">
+                <div class="box">
+                    <section>
+                        <img src="./assets/InCodeAssets/coffeecubeorg.png" alt="Original" class="locimg">
+                    </section>
+                    <div class="nameoflocation">
+                        <span>COFFEE CUBE ORIGINAL</span>
+                    </div>
+                    <div class="locationtextbox">
+                        <div class="hours">
+                            <span class="bold">Hours</span>
+                            <span class="twelvept">Monday-Friday: 8-19 <br> Saturday: 10-19 <br> Sunday: 10-18</span>
+                        </div>
+                        <div class="address">
+                            <span class="bold">Address</span>
+                            <span class="twelvept">Jakubská, 110 00 Staré Město
+                                Prague 1, Czechia <br> <br> </span>
+                        </div>
+                        <div class="rectanglebutton">
+                            <a href="https://maps.app.goo.gl/kKwzKGAfykzfsXSD7" target="_blank" class="linkstyle">
+                                <span class="bold twelvept">GET DIRECTIONS</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ccblack">
+                <div class="box">
+                    <section>
+                        <img src="./assets/InCodeAssets/coffeecubeblk.jpg" alt="Black" class="locimg">
+                    </section>
+                    <div class="nameoflocation">
+                        <span>COFFEE CUBE BLACK</span>
+                    </div>
+                    <div class="locationtextbox">
+                        <div class="hours">
+                            <span class="bold">Hours</span>
+                            <span class="twelvept">Monday-Friday: 8:30-19 <br> Saturday-Sunday: 10-18 <br> <br> </span>
+                        </div>
+                        <div class="address">
+                            <span class="bold">Address</span>
+                            <span class="twelvept">Jungmannovo nám. 6/767, 110 00 Můstek
+                                Prague 1, Czechia  </span>
+                        </div>
+                        <div class="rectanglebutton">
+                            <a href="https://maps.app.goo.gl/DK7F3yAyLxc5UHum6" target="_blank" class="linkstyle">
+                                <span class="bold twelvept">GET DIRECTIONS</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+
+
+    <footer id="footer">
         <section class="footer"> <!--Footer-->
             <div class="footertext">
                 <span>2024 All Rights Reserved</span>
                 <span> Coffee Cube Design By Alexander Hazel</span>
             </div>
-            <div><img src="./assets/InCodeAssets/coffeecubelogo.png" alt="Coffee cube logo"></div>
+            <div><img src="./assets/InCodeAssets/logocz.png" alt="Coffee cube logo"></div>
             <div class="logos">
-                <div><img src="./assets/phosphor-icons/PNGs/bold/facebook-logo-bold.png" alt="facebook logo" class="footerpics"></div>
-                <div><img src="./assets/phosphor-icons/PNGs/bold/twitter-logo-bold.png" alt="Twitter logo" class="footerpics"></div>
-                <div><img src="./assets/phosphor-icons/PNGs/bold/instagram-logo-bold.png" alt="Instagram logo" class="footerpics"></div>
+                <a href="https://www.instagram.com/coffeecubeofficial/"><img src="./assets/phosphor-icons/PNGs/bold/facebook-logo-bold.png" alt="facebook logo" class="footerpics"></a>
+                <a href="https://www.facebook.com/coffeecubeoriginal/"><img src="./assets/phosphor-icons/PNGs/bold/instagram-logo-bold.png" alt="Instagram logo" class="footerpics"></a>
             </div>
         </section> 
     </footer>
