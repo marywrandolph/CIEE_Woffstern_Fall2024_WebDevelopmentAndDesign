@@ -84,11 +84,15 @@
 }
 .ourstorypics{
     display: flex;
+    align-items: center;
+    flex-direction: row;
 
 }
 .smaller{
-    max-height: 25%;
-    max-width: 25%;
+    height: 250px;
+    width: 250px;
+   /* min-height: 40px;
+    min-width: 40px;*/
 }
 
 
@@ -102,7 +106,7 @@
     padding-bottom: 1.5rem;
 }
 
-.nameoflocation {
+.locationname {
     font-weight: bold;
     font-size: 32px;
     display: flex;
@@ -124,7 +128,7 @@
     gap: 1rem;
 }
 
-.ccoriginal {
+.cuborg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +140,7 @@
     align-items: center;
 }
 
-.locationtextbox {
+.locationtext {
     width: 600px;
     height: 295px;
     display: flex;
@@ -146,7 +150,7 @@
     gap: 1rem;
 }
 
-.rectanglebutton {
+.locbutton {
     display: flex;
     width: 150px;
     height: 35px;
@@ -155,7 +159,7 @@
     align-items: center;
 }
 
-.box {
+.boxidk {
     width: 600px;
     height: 550px;
     border: solid;
@@ -193,4 +197,82 @@
 }
 .picside{
     width: 50%;
+}
+.quoteflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainquote{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.topquote{
+    display: flex;
+
+}
+.bottomquote{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.quotesize{
+    height: 50px;
+    width: 50px;
+}
+.centerimage{
+    display: flex;
+    justify-content: center;
+
+}
+body{
+    margin: 0;
+}
+.storyflex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.storypicssize{
+    width: 50%;
+}
+.black{
+    color: black;
+}
+.interiorstory{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.storytext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.abtus{
+    border-bottom-style: solid;
+    border-color: beige;
+    font-size: 18pt;
+}
+.gray{
+    background-color: lightgray;
+}
+.twelve{
+    font-size: 10pt;
+    width: fit-content;
+
+}
+.menuflex{
+    display: flex;
+}
+.tan{
+    color: burlywood;
+}
+a:hover{
+    color: blue;
+}
+.moreflex{
+    display: flex;
+    flex-direction: column;
 }
