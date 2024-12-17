@@ -21,6 +21,7 @@ footer{
     display: flex;
     width: fit-content;
 }
+/*Welcome Section*/
 .welcome{
     background-size: cover;
     background-position: center;
@@ -33,20 +34,25 @@ footer{
     /*align-items: center;*/
     padding-top: 70px;
 }
+.welcome-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
 .white{
     color: white;
 }
-.paragraph{
+.welcome-paragraph{
     width: 400px;
     /*height: 70px;*/
     font-size: small;
 }
-.header{
+.welcome-header{
     width: 200px;
     height: 50px;
 
 }
-.more{
+.welcome-learnmore{
     background-color: rgb(67, 40, 5);
     color: white;
     padding: 10px 20px;
@@ -54,16 +60,16 @@ footer{
     display: flex;
     width: fit-content;
 }
+/*End Welcome*/
+
+/*Start Our Story*/
 .story-right{
-    display: flex;
-    height: fit-content;
-    width: fit-content;
-    /*padding: 20px;*/
-    /*gap: 20px;*/
+    background-color: rgb(67, 40, 5);
+    color: white;
+    padding: 10px 20px;
 }
-.picture-left{
+.welcome-picture-left{
     display: flex;
-    /*height: 600px;*/
     width: 50%;
 }
 .story{
@@ -71,14 +77,13 @@ footer{
     flex-direction: row;
     background-color: rgb(87, 52, 7);
     gap: 30px;
-    /*height: 500px;*/
 }
-.this{ /*change this name*/
+.right-story{ 
     height: 20px;
     width: fit-content;
     font-size: 2em;
 }
-.that{ /*change this name*/
+.ourstory-readme{ /*change this name*/
     height: 100px;
     width: 300px;
     font-size: small;
@@ -87,20 +92,15 @@ footer{
     gap: 20px;
     column-gap: 50px;
 }
-.section{
+.ourstory-container{
     width: 100%;
     display: flex;
     align-items: stretch;
     flex-direction: row;
 
 }
-.welcome-container{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-}
 /**/
-
+/*Start Bestsellers Page*/
 .coffee-menu{
     color: white;
     background-image: url(./assets/bestsellers/coffeemenu.png);
@@ -114,18 +114,22 @@ footer{
 }
 .coffee-menu h2{
     font-size: 40px;
+    color: rgb(67, 40, 5);
+}
+.menu-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .menu-intro{
     font-size: 20px;
     color: black;
-}
-/*.menu-items{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: left;
-    gap: 5px;
-}*/
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
 .menu-item{
     display: flex;
     justify-content: space-evenly;
@@ -142,11 +146,6 @@ footer{
     width: 100%;
 
 }
-/*.menu-item img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}*/
 .menu-details h3{
     font-size: 18px;
 }
@@ -164,7 +163,7 @@ footer{
     align-items: center;
 }
 
-
+/*Start Locations*/
 .locations{
     display: flex;
     justify-content: space-around;
@@ -174,7 +173,6 @@ footer{
 }
 .location{
     text-align: center;
-    /*border-radius: 5%;*/
     border-width: 1px;
     border: 1px solid black;
     width: 45%;
@@ -191,6 +189,16 @@ footer{
 }
 .location-info div{
     width: 33%;
+}
+.get-directions{
+    color: azure;
+    border: 1cm;
+}
+.location img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    row-gap: 10px;
 }
 /*Gallery Section*/
 .gallery-item{
@@ -229,16 +237,7 @@ footer{
     text-align: center;
 }
 /*End Gallery Section*/
-.get-directions{
-    color: azure;
-    border: 1cm;
-}
-.location img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    row-gap: 10px;
-}
+/**/
 .reasons-icontxt{
     flex-direction: row;
     display: flex;
@@ -260,43 +259,11 @@ footer{
     font-size: 50px;
     display: flex;
 }
-/*Best Sellers Page*/
-.espresso{
-    height: 70px;
-    width: 70px;
-}
-.americano{
-    height: 70px;
-    width: 70px;
-}
-.macchiato{
-    height: 60px;
-    width: 60px;
-}
-.cappuccino{
-    height: 65px;
-    width: 65px;
-}
-.latte{
-    height: 70px;
-    width: 70px;
-}
-.flatwhite{
-    height: 70px;
-    width: 70px;
-}
-.mocha{
-    height: 70px;
-    width: 70px;
-}
-.dirtychai{
-    height: 70px;
-    width: 70px;
-}
+
 .navigation{
     display: flex;
     position: fixed;
-    background-color: whitesmoke;
+    background-color: antiquewhite;
     width: 100%;
     height: fit-content;
 }
@@ -374,22 +341,33 @@ footer{
 }
 .footer-links{
     display: flex;
-    width: 80%;
+    width: 100%;
     position: initial;
     align-items: center;
     color: white;
     gap: 5px;
+    flex-direction: space-between;
+    justify-content: space-between;
 }
 .footer-container{
     display: flex;
     gap: 10px;
-    border: 1px;
-    border-color: black;
+    border-width: 2px;
+    border: 1px solid black;
     background-color: rgb(90, 54, 7);
+    padding-top: 1px;
 }
 .footer-left img{
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+.footer-links{
+    padding: 0 10px;
+    text-decoration: none;
+}
+.bold{
+    font-weight: bold;
+    font-size: 15px;
 }
 .get-directions{
     background-color: black;
@@ -403,4 +381,30 @@ footer{
     .location-info{
         flex-direction: column;
     }
+}
+@media screen and (max-width: 768px) {
+    .quote{
+        flex-direction: column;
+        text-align: center;
+    }
+    .quote-left, .quote-right{
+        flex: none;
+        width: 100%;
+    }
+    .quote-text{
+        font-size: 1.2rem;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .reasons-icontxt{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .edit-text{
+        flex: none;
+        width: 80%;
+        margin: auto;
+    }
+    
 }

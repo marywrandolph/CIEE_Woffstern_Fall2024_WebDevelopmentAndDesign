@@ -2,16 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta property="og:title" content="Coffee Cube">
+        <meta property="og:description" content="Welcome to Coffee Cube, where great coffee meets great company! We can't wait to see you.">
+        <meta property="og:image" content="assets/banner/banner-logo.png">
+        <meta property="og:url" content="https://avaj.cieeprague.cz">
+        <meta property="og:type" content="website">
         <title>Coffee Cube Website</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
         <script src="https://unpkg.com/phosphor-icons"></script> 
-        <!---<link rel="icon" href="favicon.ico" type="image/x-icon">-->
-        <!---<link rel="icon" href="assets/favicon.png" type="image/png">-->
-        <meta property="og:title" content="Coffee Cube">
-        <meta property="og:description" content="Welcome to Coffee Cube, where great coffee meets great company! We can't wait to see you.">
-        <meta property="og:url" content="https://avaj.cieeprague.cz">
-        <meta property="og:type" content="website">
+        <link rel="icon" href="assets/banner/banner-logo.png" type="image/png">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
 <body>
     <!--Header-->
@@ -21,7 +22,7 @@
         </div>
         <div class="links">
             <div>
-            <a href="#shop" class="head-middle">Shop</a>
+            <a href="#home" class="head-middle">Home</a>
             <a href="#ourstory" class="head-middle">Our Story</a>
             <a href="#location" class="head-middle">Locations</a>
             <a href="#menu" class="head-middle">Menu</a>
@@ -33,18 +34,18 @@
     </nav>
     <!---Welcome-->
     <header class="welcome">
-        <div class="welcome-container">
-            <h2 class="white header">Welcome to Coffee Cube</h2>
-            <p class="white paragraph">Welcome to Coffee Cube, where great coffee meets great company! We can't wait to see you.</p>
-            <a href= "#story" class="more">Learn More</a>
+        <div class="welcome-container" id="home">
+            <h2 class="white welcome-header">Welcome to Coffee Cube</h2>
+            <p class="white welcome-paragraph">Welcome to Coffee Cube, where great coffee meets great company! We can't wait to see you.</p>
+            <a href= "#story" class="welcome-learnmore">Learn More</a>
         </div>
     </header>
-    <section class="section story" id="ourstory">
-        <img class="picture-left story" src="./assets/our-story/Beanstory.png" alt="Coffee Beans">
+    <section class="ourstory-container story" id="ourstory">
+        <img class="welcome-picture-left story" src="./assets/our-story/Beanstory.png" alt="Coffee Beans">
         <div>
-            <h3 class="white story-right story this">This is our story</h3>
-            <p class="white story-right story that">At Coffee Cube, we're all about bringing people together. Whether it's friends sharing stories, families making memories, or simply enjoying great coffee, we've created a space where everyone feels at home. With every cup, we're proud to serve quality that inspires connection and conversation.</p>
-            <a href="story" class="more gap-one story-right">Read More</a>
+            <h3 class="white story-right story right-story">This is our story</h3>
+            <p class="white story-right story ourstory-readme">At Coffee Cube, we're all about bringing people together. Whether it's friends sharing stories, families making memories, or simply enjoying great coffee, we've created a space where everyone feels at home. With every cup, we're proud to serve quality that inspires connection and conversation.</p>
+            <a href="#story" class="more gap-one story-right">Read More</a>
             <div></div>
         </div>
     </section>
@@ -79,10 +80,10 @@
         </div>
     </section>
     <!---Menu-->
-    <section class="coffee-menu">
+    <section class="coffee-menu " id="menu">
         <h2>COFFEE MENU</h2>
         <div class="menu-intro">
-            <div class="menu-leftside">
+            <div class="menu-column">
                 <div class="menu-item">
                     <img class="drinks" src="assets/bestsellers/espresso.png" alt="espresso">
                     <div>
@@ -98,7 +99,7 @@
                     <div>
                         <div class="menu-item-name">
                             <span>Americano......</span>
-                            <span>70 Kč</span>
+                            <span>80 Kč</span>
                         </div>
                         <p>Two shots of espresso diluted with hot water, smooth coffee with a balanced intensity and hint of crema.</p>
                     </div>
@@ -118,7 +119,7 @@
                     <div>
                         <div class="menu-item-name">
                             <span>Cappucino......</span>
-                            <span>70 Kč</span>
+                            <span>80 Kč</span>
                         </div>
                         <p>A bold espresso shot, delicately topped with a dollop of velvety steamed milk.</p>
                     </div>
@@ -130,7 +131,7 @@
                     <div>
                         <div class="menu-item-name">
                             <span>Latte......</span>
-                            <span>90 Kč</span>
+                            <span>85 Kč</span>
                         </div>
                         <p>A smooth and creamy espresso shot over steamed milk, topped with a light layer of foam.</p>
                     </div>
@@ -140,7 +141,7 @@
                     <div>
                         <div class="menu-item-name">
                             <span>Flat White......</span>
-                            <span>90 Kč</span>
+                            <span>85 Kč</span>
                         </div>
                         <p>A rich and velvety coffee crafted with a bold shot of espresso and a smooth layer of micro-foamed milk.</p>
                     </div>
@@ -150,7 +151,7 @@
                     <div>
                         <div class="menu-item-name">
                             <span>Mocha......</span>
-                            <span>100 Kč</span>
+                            <span>90 Kč</span>
                         </div>
                         <p>A fusion of espresso, steamed milk, and rich chocolate syrup, topped with a touch of whipped cream or a dusting of cocoa powder.</p>
                     </div>
@@ -160,7 +161,7 @@
                     <div>
                         <div class="menu-item-name">
                             <span>Dirty Chai......</span>
-                            <span>100 Kč</span>
+                            <span>95 Kč</span>
                         </div>
                         <p>A warm, spicy blend of chai tea and espresso, combined with steamed milk for a rich, creamy texture.</p>
                     </div>
@@ -168,78 +169,6 @@
             </div>
         </div>
     </section>
-    <!--
-    <section class="coffee-menu">
-        <h2>COFFEE MENU</h2>
-        <div class="menu-intro">
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img src="assets/bestsellers/espresso.png" class="espresso">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Espresso</h3><span>70</span></div>
-                        <div class="coffee-description"><p>A rich concentrated shot of coffee with bold flavor and a smooth velvety finish.</p></div>
-                    </div>
-                </div>
-            
-                <div class="menu-item">
-                    <img src="assets/bestsellers/americano.png" class="americano">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Americano</h3><span>70</span></div>
-                        <div class="coffee-description"><p>Two shots of espresso diluted with hot water, smooth coffee with a balanced intensity and hint of crema.</p></div>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <img src="assets/bestsellers/macchiato.png" class="macchiato">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Macchiato</h3><span>90</span></div>
-                        <div class="coffee-description"><p>A bold espresso shot, delicately topped with a dollop of velvety steamed milk.</p></div>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <img src="assets/bestsellers/cappuccino.png" class="cappuccino">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Cappucino</h3><span>80</span></div>
-                        <div class="coffee-description"><p>A balanced blend of espresso steamed milk, and a layer of velvety foam.</p></div>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <img src="assets/bestsellers/latte.png" class="latte">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Latte</h3><span>80</span></div>
-                        <div class="coffee-description"></div><p>A smooth and creamy espresso shot over steamed milk, topped with a light layer of foam.</p></div>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <img src="assets/bestsellers/flatwhite.png" class="flatwhite">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Flat White</h3><span>90</span></div>
-                        <div class="coffee-description"><p>A rich and velvety coffee crafted with a bold shot of espresso and a smooth layer of micro-foamed milk.</p></div>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <img src="assets/bestsellers/mocha.png" class="mocha">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Mocha</h3><span>90</span></div>
-                        <div class="coffee-description"><p>A fusion of espresso, steamed milk, and rich chocolate syrup, topped with a touch of whipped cream or a dusting of cocoa powder.</p></div>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <img src="assets/bestsellers/dirtychai.png" class="dirtychai">
-                    <div class="menu-details">
-                        <div class="coffee-name"><h3>Dirty Chai</h3><span>90</span></div>
-                        <div class="coffee-description"><p>A warm, spicy blend of chai tea and espresso, combined with steamed milk for a rich, creamy texture.</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
 <!----Gallery-->
     <section class="gallery">
         <div class="gallery gallery-top">Our Gallery</div>
@@ -257,7 +186,7 @@
                 <div><img src="assets/locations/ccblack.png" alt="CoffeeCubeBlack"></div>
                 <div class="location-detail">
                     <div>
-                        <h3>Coffe Cube Black</h3>
+                        <h3>Coffee Cube Black</h3>
                     </div>
                     <div class="location-info">
                         <div>
@@ -276,7 +205,7 @@
                 <div><img src="assets/locations/ccoriginal.png" alt="CoffeeCube"></div>
                 <div class="location-detail">
                     <div>
-                        <h3>Coffe Cube Original</h3>
+                        <h3>Coffee Cube Original</h3>
                     </div>
                     <div class="location-info">
                         <div>
@@ -307,12 +236,19 @@
             
             <div>
                 <h4>VISIT US</h4>
-                <div>Location 1</div>
-                <div>Location 2</div>
+                <div>
+                    <p class="bold">Coffee Cube Black</p>
+                    <p>Jungmannovo nám 6/767, 100 00 Mustek</p>
+                </div>
+                <div>
+                    <p class="bold">Coffee Cube Original</p>
+                    <p>Jakubská, 110 00 Staré Město</p>
+                </div>
             </div>
         </div>
         <div>
             <i class="ph ph-facebook-logo"></i>
+            <a href=""></a>
             <i class="ph ph-instagram-logo"></i>
         </div>
     </footer>
