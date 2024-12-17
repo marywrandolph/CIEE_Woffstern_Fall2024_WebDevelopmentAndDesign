@@ -100,6 +100,7 @@ footer{
     width: 80%;
 }
 /**/
+
 .coffee-menu{
     color: white;
     background-image: url(./assets/bestsellers/coffeemenu.png);
@@ -118,13 +119,13 @@ footer{
     font-size: 20px;
     color: black;
 }
-.menu-items{
+/*.menu-items{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
     gap: 5px;
-}
+}*/
 .menu-item{
     display: flex;
     justify-content: space-evenly;
@@ -132,11 +133,20 @@ footer{
     align-items: center;
     padding: 5px;
 }
-.menu-item img{
+.drinks{
+    width: 50px;
+}
+.menu-item-name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+/*.menu-item img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-}
+}*/
 .menu-details h3{
     font-size: 18px;
 }
@@ -154,6 +164,8 @@ footer{
     align-items: center;
 }
 
+
+
 .gallery{
     /*background-size: cover;*/
     background-image: url(assets/gallery/gallerybeans.png);
@@ -166,6 +178,7 @@ footer{
     color: black;
     text-align: center;
 }
+
 .locations{
     display: flex;
     justify-content: space-around;
@@ -193,7 +206,7 @@ footer{
 .location-info div{
     width: 33%;
 }
-
+/*Gallery Section*/
 .gallery-item{
     width: 45%;
     display: flex;
@@ -220,6 +233,7 @@ footer{
     color: black;
     text-align: center;
 }
+/*End Gallery Section*/
 .get-directions{
     color: azure;
     border: 1cm;
